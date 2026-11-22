@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefes Técnicos de Comando — Tablero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="view-atlas">
+  <div class="ocean">
+    <div class="chart-grid" aria-hidden="true"></div>
+    <div class="rhumb-lines" aria-hidden="true"></div>
+    <svg class="compass" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".25" />
+      <g class="compass-needles">
+        <polygon points="100,18 108,100 100,92 92,100" fill="currentColor" opacity=".55" />
+        <polygon points="100,182 108,100 100,108 92,100" fill="currentColor" opacity=".3" />
+        <polygon points="18,100 100,92 92,100 100,108" fill="currentColor" opacity=".35" />
+        <polygon points="182,100 100,92 100,108 108,100" fill="currentColor" opacity=".35" />
+      </g>
+      <text x="100" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity=".5">N</text>
+    </svg>
+  </div>
+
+  <section class="atlas" aria-label="Tablero de Jefes Técnicos de Comando">
+    <header class="atlas-header">
+      <p class="carta-label">Armada Nacional de Colombia</p>
+      <div class="seal-line atlas-seal" aria-hidden="true"></div>
+      <h1 class="atlas-title">Fuerza Naval del Sur</h1>
+      <p class="atlas-sub">Jefes Técnicos de Comando · Cartas de navegación</p>
+    </header>
+
+    <div class="atlas-grid">
+      <a class="atlas-card" href="alberto-gomez-leon.html" style="--i: 0">
+        <span class="atlas-card-frame">
+          <img src="img/alberto-gomez-leon.png" alt="Retrato de Alberto Gómez León" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Alberto Gómez León</span>
+          <span class="atlas-card-period">Diciembre 2007 — Julio 2011</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="douglas-mejia-barrios.html" style="--i: 1">
+        <span class="atlas-card-frame">
+          <img src="img/douglas-mejia-barrios.png" alt="Retrato de Douglas Ariel Mejía Barrios" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Douglas Ariel Mejía Barrios</span>
+          <span class="atlas-card-period">Julio 2011 — Diciembre 2011</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="william-arroyo-lechuga.html" style="--i: 2">
+        <span class="atlas-card-frame">
+          <img src="img/william-arroyo-lechuga.png" alt="Retrato de William Arroyo Lechuga" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">William Arroyo Lechuga</span>
+          <span class="atlas-card-period">Diciembre 2011 — Diciembre 2014</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="jose-ferney-garzon-tovar.html" style="--i: 3">
+        <span class="atlas-card-frame">
+          <img src="img/jose-ferney-garzon-tovar.png" alt="Retrato de José Ferney Garzón Tovar" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">José Ferney Garzón Tovar</span>
+          <span class="atlas-card-period">Enero 2015 — Enero 2016</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="alex-enrique-villarreal-cardenas.html" style="--i: 4">
+        <span class="atlas-card-frame">
+          <img src="img/alex-enrique-villarreal-cardenas.png" alt="Retrato de Alex Enrique Villarreal Cárdenas" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Alex Enrique Villarreal Cárdenas</span>
+          <span class="atlas-card-period">Enero 2016 — Diciembre 2016</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="rodolfo-tomas-cabrera-rodriguez.html" style="--i: 5">
+        <span class="atlas-card-frame">
+          <img src="img/rodolfo-tomas-cabrera-rodriguez.png" alt="Retrato de Rodolfo Tomás Cabrera Rodríguez" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Rodolfo Tomás Cabrera Rodríguez</span>
+          <span class="atlas-card-period">Enero 2017 — Diciembre 2017</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="wilman-osorio-gomez.html" style="--i: 6">
+        <span class="atlas-card-frame">
+          <img src="img/wilman-osorio-gomez.png" alt="Retrato de Wilman Osorio Gómez" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">SMC</span>
+          <span class="atlas-card-name">Wilman Osorio Gómez</span>
+          <span class="atlas-card-period">Junio 2018 — Junio 2019</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="ever-enrique-marchena-tapias.html" style="--i: 7">
+        <span class="atlas-card-frame">
+          <img src="img/ever-enrique-marchena-tapias.png" alt="Retrato de Ever Enrique Marchena Tapias" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Ever Enrique Marchena Tapias</span>
+          <span class="atlas-card-period">Julio 2020 — Septiembre 2021</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="ricardo-acosta-hidalgo.html" style="--i: 8">
+        <span class="atlas-card-frame">
+          <img src="img/ricardo-acosta-hidalgo.png" alt="Retrato de Ricardo Acosta Hidalgo" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Ricardo Acosta Hidalgo</span>
+          <span class="atlas-card-period">Septiembre 2021 — Agosto 2022</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="julian-andres-galvez-alzate.html" style="--i: 9">
+        <span class="atlas-card-frame">
+          <img src="img/julian-andres-galvez-alzate.png" alt="Retrato de Julián Andrés Gálvez Alzate" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Julián Andrés Gálvez Alzate</span>
+          <span class="atlas-card-period">2022 — Agosto 2023</span>
+        </span>
+      </a>
+
+      <a class="atlas-card" href="edwin-alberto-lorduy-ortega.html" style="--i: 10">
+        <span class="atlas-card-frame">
+          <img src="img/edwin-alberto-lorduy-ortega.png" alt="Retrato de Edwin Alberto Lorduy Ortega" />
+        </span>
+        <span class="atlas-card-meta">
+          <span class="atlas-card-rank">JTC</span>
+          <span class="atlas-card-name">Edwin Alberto Lorduy Ortega</span>
+          <span class="atlas-card-period">2023 — Agosto 2024</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <script src="atlas.js"></script>
+</body>
+</html>

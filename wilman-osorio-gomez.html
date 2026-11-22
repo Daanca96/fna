@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMC Wilman Osorio Gómez — Carta de Navegación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="view-carta is-loading">
+  <div class="veil" aria-hidden="true">
+    <p class="veil-text">Abriendo carta de navegación…</p>
+  </div>
+
+  <div class="ocean">
+    <div class="chart-grid" aria-hidden="true"></div>
+    <div class="rhumb-lines" aria-hidden="true"></div>
+    <svg class="compass" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".25" />
+      <g class="compass-needles">
+        <polygon points="100,18 108,100 100,92 92,100" fill="currentColor" opacity=".55" />
+        <polygon points="100,182 108,100 100,108 92,100" fill="currentColor" opacity=".3" />
+        <polygon points="18,100 100,92 92,100 100,108" fill="currentColor" opacity=".35" />
+        <polygon points="182,100 100,92 100,108 108,100" fill="currentColor" opacity=".35" />
+      </g>
+      <text x="100" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity=".5">N</text>
+    </svg>
+  </div>
+
+  <main class="stage">
+    <a class="btn-back" href="index.html">← Tablero</a>
+
+    <article class="parchment" aria-labelledby="nombre">
+      <div class="scroll-rod scroll-rod-top" aria-hidden="true"></div>
+      <div class="scroll-rod scroll-rod-bottom" aria-hidden="true"></div>
+      <div class="parchment-edge" aria-hidden="true"></div>
+      <div class="corner corner-tl" aria-hidden="true"></div>
+      <div class="corner corner-tr" aria-hidden="true"></div>
+      <div class="corner corner-bl" aria-hidden="true"></div>
+      <div class="corner corner-br" aria-hidden="true"></div>
+
+      <header class="carta-header reveal" style="--d: 0.55s">
+        <p class="carta-label">Armada Nacional de Colombia</p>
+        <div class="seal-line" aria-hidden="true"></div>
+        <p class="periodo">Junio 2018 — Junio 2019</p>
+      </header>
+
+      <div class="carta-body">
+        <figure class="retrato reveal" style="--d: 0.85s">
+          <div class="retrato-ring">
+            <img
+              src="img/wilman-osorio-gomez.png"
+              alt="Retrato oficial del SMC Wilman Osorio Gómez con uniforme de gala de Infantería de Marina"
+              width="320"
+              height="400"
+            />
+          </div>
+          <figcaption class="rango">Sargento Mayor de Comando · Infantería de Marina</figcaption>
+        </figure>
+
+        <div class="info">
+          <h1 id="nombre" class="reveal-name" style="--d: 1.05s">Wilman Osorio Gómez</h1>
+          <p class="subtitulo reveal" style="--d: 1.2s">SMC · Fuerza Naval del Sur</p>
+
+          <section class="bloque reveal" style="--d: 1.35s">
+            <h2>Trayectoria</h2>
+            <p>
+              Se incorporó el 8 de enero de 1993 a la Escuela de Guerra Anfibia EGAN, en la actualidad
+              Escuela de Formación de Infantería de Marina, ingresa al escalafón militar como Suboficial
+              de Infantería de Marina de la gloriosa marina de Colombia el 8 de enero de 1993, y ascendió
+              al grado de Sargento Mayor de Comando de Infantería de Marina, máximo grado de la
+              suboficialidad, en septiembre de 2018. Graduado en la Escuela de Formación de Infantería
+              de Marina como Tecnólogo en Entrenamiento y Gestión Militar (2008). Buzo de Primera Clase
+              Táctico (2009) y Buzo Maestro de la Armada Nacional (2017). Tras 28 años de servicio activo
+              pasó a retiro en 2021.
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.45s">
+            <h2>Cursos militares</h2>
+            <p>
+              Reconocimiento Anfibio y Demoliciones Submarinas – RADS (1994), Aparato de Respiración con
+              Oxígeno (1996), Comando Submarino (1998/1999), Paracaidismo Militar Básico (1999),
+              Comando Anfibio (2000), Contrainteligencia Militar Básico (2000), Contraguerrillas Básico
+              (2000), Inteligencia, Reconocimiento y Asalto con las Fuerzas SBS Británicas (2002) y
+              Mezcla de Gases Nitrox Avanzado (2010).
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.55s">
+            <h2>Unidades</h2>
+            <p>
+              Batallón de Fuerzas Especiales de Infantería de Marina, Unidad de Comandos Submarinos,
+              Lancha Submarina ARC “Poderosa”, Escuela de Paracaidismo Militar Tolemaida, Estación de
+              Guardacostas de Turbo, Centro de Entrenamiento de Inteligencia Naval, Escuela de Formación
+              de Infantería de Marina, Batallón de Policía Naval Militar No. 21, Grupo de Guardacostas
+              del Caribe, Grupos Especiales de Inteligencia, Batallón Fluvial de Infantería de Marina
+              No. 70, Escuela de Buceo, Centro de Instrucción y Entrenamiento Anfibio, Escuela de Armas
+              Combinadas del Ejército Nacional, Cuartel General Fuerza Naval del Sur, Personal Agregado
+              a Comando Armada en el Exterior.
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.75s">
+            <h2>Cargos</h2>
+            <p>
+              Comandante de Escuadra del Batallón de Fuerzas Especiales de Infantería de Marina,
+              Copiloto de Lanchas Submarinas de la Lancha Submarina ARC “Poderosa” y de la Unidad de
+              Comandos Submarinos, Comandante de Escuadra del Batallón de Policía Naval Militar No. 21,
+              Escolta del Comandante de la Fuerza Naval del Atlántico en el Batallón de Policía Naval
+              Militar No. 21, Francotirador del Grupo de Guardacostas del Caribe, Artillero y Navegante
+              de Equipo de los Grupos Especiales de Inteligencia, Jefe de Sección de Contrainteligencia
+              del Batallón Fluvial de Infantería de Marina No. 70, Comandante de Destacamento y Jefe de
+              Sección de Contrainteligencia del Batallón de Fuerzas Especiales de Infantería de Marina,
+              Sargento Primero de Compañía y Jefe de la División de Buceo y Salvamento del Batallón de
+              Fuerzas Especiales de Infantería de Marina, Sargento Primero de Compañía del Centro de
+              Instrucción y Entrenamiento Anfibio, Jefe del Programa de Buceo de la Escuela de Formación
+              de Infantería de Marina y del Centro de Instrucción y Entrenamiento Anfibio, Sargento Mayor
+              Asesor del Centro de Instrucción y Entrenamiento Anfibio, Sargento Mayor de Comando del
+              Cuartel General de la Fuerza Naval del Sur, Secretario de la Agregaduría Naval de la
+              embajada de Colombia en Chile, donde por motivo de la pandemia a causa del Covid-19 ocupó
+              el cargo de agregado naval encargado desde marzo hasta septiembre de 2020.
+            </p>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 1.95s">
+            <h2>Condecoraciones y logros</h2>
+            <ul>
+              <li>Medallas por tiempo de servicio 15, 20 y 25 años</li>
+              <li>Orden al Mérito Naval “Almirante Padilla”</li>
+              <li>Orden al Mérito Militar “Antonio Nariño”</li>
+              <li>Medalla Servicios Distinguidos a la Fuerza Submarina</li>
+              <li>Medalla “Fe en la Causa”</li>
+              <li>Medalla Servicios Distinguidos a la Infantería de Marina</li>
+              <li>Medalla Escuela de Formación de Infantería de Marina</li>
+              <li>Medalla Servicios Distinguidos en Operaciones Especiales del CCOES</li>
+              <li>Primer puesto — Reconocimiento Anfibio y Demoliciones Submarinas (1994)</li>
+              <li>Primer puesto — Comando Submarino (1998)</li>
+              <li>Primer puesto — CAPAVAN (2008)</li>
+              <li>Fundador del Departamento de Buceo Táctico Militar — DEBUTAM (2015)</li>
+              <li>Primer Buzo Maestro de la Armada Nacional en Buceo Táctico Militar (2017)</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="carta-footer reveal" style="--d: 2.15s">
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+        <span>Carta de navegación · Archivo histórico</span>
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+      </footer>
+    </article>
+  </main>
+
+  <script src="carta.js"></script>
+</body>
+</html>

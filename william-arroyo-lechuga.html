@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTC William Arroyo Lechuga — Carta de Navegación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="view-carta is-loading">
+  <div class="veil" aria-hidden="true">
+    <p class="veil-text">Abriendo carta de navegación…</p>
+  </div>
+
+  <div class="ocean">
+    <div class="chart-grid" aria-hidden="true"></div>
+    <div class="rhumb-lines" aria-hidden="true"></div>
+    <svg class="compass" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".25" />
+      <g class="compass-needles">
+        <polygon points="100,18 108,100 100,92 92,100" fill="currentColor" opacity=".55" />
+        <polygon points="100,182 108,100 100,108 92,100" fill="currentColor" opacity=".3" />
+        <polygon points="18,100 100,92 92,100 100,108" fill="currentColor" opacity=".35" />
+        <polygon points="182,100 100,92 100,108 108,100" fill="currentColor" opacity=".35" />
+      </g>
+      <text x="100" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity=".5">N</text>
+    </svg>
+  </div>
+
+  <main class="stage">
+    <a class="btn-back" href="index.html">← Tablero</a>
+
+    <article class="parchment" aria-labelledby="nombre">
+      <div class="scroll-rod scroll-rod-top" aria-hidden="true"></div>
+      <div class="scroll-rod scroll-rod-bottom" aria-hidden="true"></div>
+      <div class="parchment-edge" aria-hidden="true"></div>
+      <div class="corner corner-tl" aria-hidden="true"></div>
+      <div class="corner corner-tr" aria-hidden="true"></div>
+      <div class="corner corner-bl" aria-hidden="true"></div>
+      <div class="corner corner-br" aria-hidden="true"></div>
+
+      <header class="carta-header reveal" style="--d: 0.55s">
+        <p class="carta-label">Armada Nacional de Colombia</p>
+        <div class="seal-line" aria-hidden="true"></div>
+        <p class="periodo">Diciembre 2011 — Diciembre 2014</p>
+      </header>
+
+      <div class="carta-body">
+        <figure class="retrato reveal" style="--d: 0.85s">
+          <div class="retrato-ring">
+            <img
+              src="img/william-arroyo-lechuga.png"
+              alt="Retrato oficial del JTC William Arroyo Lechuga con uniforme de gala de la Armada Nacional"
+              width="320"
+              height="400"
+            />
+          </div>
+          <figcaption class="rango">Jefe Técnico de Comando</figcaption>
+        </figure>
+
+        <div class="info">
+          <h1 id="nombre" class="reveal-name" style="--d: 1.05s">William Arroyo Lechuga</h1>
+          <p class="subtitulo reveal" style="--d: 1.2s">JTC · Fuerza Naval del Sur</p>
+
+          <section class="bloque reveal" style="--d: 1.35s">
+            <h2>Trayectoria</h2>
+            <p>
+              Se incorporó en enero de 1986 a la Base de Entrenamiento Naval A.R.C. “Barranquilla”,
+              ingresa al escalafón militar como Suboficial de la gloriosa marina de Colombia el
+              1 de diciembre de 1986, y ascendió al grado de Jefe Técnico de Comando el
+              4 de marzo de 2012. Graduado en la Escuela Naval de Suboficiales como
+              Tecnólogo en Electrónica Naval.
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.55s">
+            <h2>Unidades</h2>
+            <p>
+              ARC “Caldas”, Escuela Naval de Suboficiales ARC “Barranquilla”, ARC “Espartana”,
+              Oficina Asesora Secretaría General MDN, Departamento de Armas y Electrónica BN2,
+              Cuartel General Fuerza Naval del Sur.
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.75s">
+            <h2>Cargos</h2>
+            <p>
+              Artillero ARC “Caldas”, Ayudante Comando ARC “Caldas”, Instructor de armamento
+              Escuela Naval de Suboficiales, Jefe de Artillería ARC “Espartana”, Auxiliar
+              Oficina Asesora Secretaría General MDN, Analista Oficina Asesora Secretaría General MDN,
+              Guarda parque Departamento de Armas y Electrónica BN2, Jefe Técnico de Comando
+              Fuerza Naval del Sur.
+            </p>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 1.95s">
+            <h2>Condecoraciones</h2>
+            <ul>
+              <li>Orden al Mérito Naval “Almirante Padilla” — Caballero</li>
+              <li>Medalla por tiempo de servicio 15 años</li>
+              <li>Orden al Mérito Militar “Antonio Nariño” — Oficial</li>
+              <li>Medalla por tiempo de servicio 20 años</li>
+              <li>Medalla Servicios Distinguidos a la Infantería de Marina</li>
+              <li>Medalla al Mérito Logístico y Administrativo Contralmirante “Rafael Tono”</li>
+              <li>Medalla por tiempo de servicio 25 años</li>
+              <li>Medalla Servicios Distinguidos a la Armada Nacional</li>
+              <li>Medalla Servicios Distinguidos a la Escuela Naval de Suboficiales</li>
+              <li>Medalla Militar Fe en la Causa</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="carta-footer reveal" style="--d: 2.15s">
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+        <span>Carta de navegación · Archivo histórico</span>
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+      </footer>
+    </article>
+  </main>
+
+  <script src="carta.js"></script>
+</body>
+</html>

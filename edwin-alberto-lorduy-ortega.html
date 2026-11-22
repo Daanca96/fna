@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTC Edwin Alberto Lorduy Ortega — Carta de Navegación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="view-carta is-loading">
+  <div class="veil" aria-hidden="true">
+    <p class="veil-text">Abriendo carta de navegación…</p>
+  </div>
+
+  <div class="ocean">
+    <div class="chart-grid" aria-hidden="true"></div>
+    <div class="rhumb-lines" aria-hidden="true"></div>
+    <svg class="compass" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".25" />
+      <g class="compass-needles">
+        <polygon points="100,18 108,100 100,92 92,100" fill="currentColor" opacity=".55" />
+        <polygon points="100,182 108,100 100,108 92,100" fill="currentColor" opacity=".3" />
+        <polygon points="18,100 100,92 92,100 100,108" fill="currentColor" opacity=".35" />
+        <polygon points="182,100 100,92 100,108 108,100" fill="currentColor" opacity=".35" />
+      </g>
+      <text x="100" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity=".5">N</text>
+    </svg>
+  </div>
+
+  <main class="stage">
+    <a class="btn-back" href="index.html">← Tablero</a>
+
+    <article class="parchment" aria-labelledby="nombre">
+      <div class="scroll-rod scroll-rod-top" aria-hidden="true"></div>
+      <div class="scroll-rod scroll-rod-bottom" aria-hidden="true"></div>
+      <div class="parchment-edge" aria-hidden="true"></div>
+      <div class="corner corner-tl" aria-hidden="true"></div>
+      <div class="corner corner-tr" aria-hidden="true"></div>
+      <div class="corner corner-bl" aria-hidden="true"></div>
+      <div class="corner corner-br" aria-hidden="true"></div>
+
+      <header class="carta-header reveal" style="--d: 0.55s">
+        <p class="carta-label">Armada Nacional de Colombia</p>
+        <div class="seal-line" aria-hidden="true"></div>
+        <p class="periodo">2023 — Agosto 2024</p>
+      </header>
+
+      <div class="carta-body">
+        <figure class="retrato reveal" style="--d: 0.85s">
+          <div class="retrato-ring">
+            <img
+              src="img/edwin-alberto-lorduy-ortega.png"
+              alt="Retrato oficial del JTC Edwin Alberto Lorduy Ortega con uniforme de gala de la Armada Nacional"
+              width="320"
+              height="400"
+            />
+          </div>
+          <figcaption class="rango">Jefe Técnico de Comando · Asesor FNA</figcaption>
+        </figure>
+
+        <div class="info">
+          <h1 id="nombre" class="reveal-name" style="--d: 1.05s">Edwin Alberto Lorduy Ortega</h1>
+          <p class="subtitulo reveal" style="--d: 1.2s">JTC · Fuerza Naval de la Amazonía</p>
+
+          <section class="bloque reveal" style="--d: 1.35s">
+            <h2>Trayectoria</h2>
+            <p>
+              Ingresó a la Armada Nacional de Colombia el 13 de enero de 1998, incorporándose a la
+              Escuela Naval de Suboficiales A.R.C. “Barranquilla”. Ascendió al grado de Jefe Técnico
+              de Comando el 1 de septiembre de 2024, mediante Resolución ARC 0933 del 29 de agosto
+              de 2024. Su especialidad militar es Navegación y Señales, con área de conocimiento en
+              Navegación. Su trayectoria comprende el servicio a bordo de unidades de superficie, la
+              gestión de operaciones navales, la formación de personal, la asesoría de comando y la
+              representación institucional en el exterior.
+            </p>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 1.5s">
+            <h2>Formación académica</h2>
+            <ul>
+              <li>Técnico en Asistencia en Organización de Archivos — SENA</li>
+              <li>Tecnólogo Naviero — ENSB, con registro profesional auxiliar ante COPNIA</li>
+              <li>Ingeniero Industrial — Fundación de Educación Superior San José (COPNIA)</li>
+              <li>Magíster en Gestión del Negocio Marítimo y Derecho Marítimo — Universidad Europea de Valencia, España</li>
+              <li>Finanzas para No Financieros — Politécnico Superior</li>
+              <li>Marketing Digital y Negocios Digitales — Fundación San José</li>
+              <li>Seguridad y Defensa II — Universidad Militar Nueva Granada</li>
+              <li>Inspector para la Prevención de la Contaminación Marina y Fluvial — ENAP</li>
+              <li>Gestión del Riesgo de Desastres — ESAP</li>
+              <li>Profesor Militar de Cuarta Categoría · PISAJ 18</li>
+            </ul>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 1.7s">
+            <h2>Unidades y cargos</h2>
+            <ul>
+              <li>1999-2003 — Jefe de Navegación ARC “Bahía Utría” (Bahía Málaga)</li>
+              <li>2004-2009 — Jefe de Sección de Navegación ARC “Almirante Padilla” (PANAMAX, UNITAS)</li>
+              <li>2010-2011 — Jefe de Sección Navegación Buque Escuela ARC “Gloria” (Cabo de Hornos, Velas Sudamérica)</li>
+              <li>2012-2015 — Departamento Operaciones Fuerza Naval del Caribe (N3FNC)</li>
+              <li>2016-2018 — Instructor y cargos académicos Escuela de Superficie del Pacífico (ESUP)</li>
+              <li>2018-2022 — Instructor y cargos académicos Escuela Internacional de Superficie del Caribe (ESUPC)</li>
+              <li>2023-2024 — Asesor de Comando Fuerza Naval de la Amazonía (BRACOLPER)</li>
+              <li>2024-2025 — Secretario Agregaduría Naval en Berlín, Alemania</li>
+            </ul>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 1.95s">
+            <h2>Condecoraciones</h2>
+            <ul>
+              <li>Medalla Servicios Distinguidos a la Fuerza de Superficie (2007)</li>
+              <li>Orden del Mérito Naval “Almirante Padilla” — Compañero (2009)</li>
+              <li>Medalla por Tiempo de Servicio 15 años (2014)</li>
+              <li>Medalla por Tiempo de Servicio 20 años (2019)</li>
+              <li>Orden del Mérito Militar “Antonio Nariño” — Caballero (2021)</li>
+              <li>Medalla Servicios Distinguidos a la Armada Nacional (2022)</li>
+              <li>Medalla al Espíritu del Bicentenario Naval (2023)</li>
+              <li>Medalla por Tiempo de Servicio 25 años (2024)</li>
+            </ul>
+          </section>
+
+          <section class="bloque reveal" style="--d: 2.15s">
+            <h2>Experiencia destacada</h2>
+            <p>
+              Su experiencia integra navegación y operaciones de superficie, docencia y capacitación
+              marítima, gestión académica y asesoría al mando. En 2023 cursó el Programa Integral para
+              Suboficiales de Alta Jerarquía (PISAJ 18). Durante su desempeño en la Fuerza Naval de la
+              Amazonía participó en actividades institucionales en el área de Leticia; posteriormente,
+              en la Agregaduría Naval en Berlín, apoyó la agenda de representación y coordinación
+              internacional, incluidas actividades y visitas vinculadas con Alemania y otros destinos
+              europeos.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <footer class="carta-footer reveal" style="--d: 2.3s">
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+        <span>Carta de navegación · Archivo histórico</span>
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+      </footer>
+    </article>
+  </main>
+
+  <script src="carta.js"></script>
+</body>
+</html>
