@@ -1,8 +1,8 @@
-:root {
+﻿:root {
   --ink: #142438;
   --ink-soft: #2a4058;
-  --sea: #0b1c2c;
-  --sea-mid: #16324a;
+  --sea: #1c4860;
+  --sea-mid: #245870;
   --brass: #9a7b3c;
   --brass-bright: #c4a35a;
   --parchment: #d9c49a;
@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ——— Velo de apertura (solo al abrir carta) ——— */
+/* â€”â€”â€” Velo de apertura (solo al abrir carta) â€”â€”â€” */
 .veil {
   position: fixed;
   inset: 0;
@@ -81,9 +81,9 @@ body.view-carta.is-open .veil {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 40%, #1a3a52 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 80% 80%, #0e2838 0%, transparent 50%),
-    linear-gradient(165deg, #0a1826 0%, #122c40 45%, #0b1c2c 100%);
+    radial-gradient(ellipse 75% 55% at 50% 35%, #3a6a88 0%, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 85% 80%, #2a5470 0%, transparent 55%),
+    linear-gradient(165deg, #1a3d55 0%, #245870 40%, #1c4860 100%);
   pointer-events: none;
   opacity: 0;
   transform: scale(1.06);
@@ -100,10 +100,10 @@ body.view-carta .ocean {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(154, 123, 60, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(154, 123, 60, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(232, 208, 144, 0.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 208, 144, 0.28) 1px, transparent 1px);
   background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black 30%, transparent 85%);
   opacity: 0;
 }
 
@@ -111,7 +111,7 @@ body.atlas-ready .chart-grid,
 body.view-carta.is-open .chart-grid {
   animation:
     grid-fade 1.4s 0.2s both,
-    grid-drift 28s 1s linear infinite;
+    grid-drift 22s 1s linear infinite;
 }
 
 .rhumb-lines {
@@ -120,8 +120,8 @@ body.view-carta.is-open .chart-grid {
   background:
     repeating-conic-gradient(
       from 0deg at 50% 50%,
-      transparent 0deg 14deg,
-      rgba(154, 123, 60, 0.045) 14deg 15deg
+      transparent 0deg 13deg,
+      rgba(232, 208, 144, 0.16) 13deg 14.5deg
     );
   opacity: 0;
 }
@@ -130,24 +130,24 @@ body.atlas-ready .rhumb-lines,
 body.view-carta.is-open .rhumb-lines {
   animation:
     rhumb-in 1.6s 0.3s both,
-    rhumb-spin 90s 1.4s linear infinite;
+    rhumb-spin 70s 1.4s linear infinite;
 }
 
 .compass {
   position: absolute;
   right: 4vw;
   bottom: 6vh;
-  width: min(180px, 22vw);
-  color: var(--brass);
+  width: min(200px, 26vw);
+  color: #e8d090;
   opacity: 0;
-  filter: drop-shadow(0 0 12px rgba(154, 123, 60, 0.15));
+  filter: drop-shadow(0 0 10px rgba(232, 208, 144, 0.35));
 }
 
 body.atlas-ready .compass,
 body.view-carta.is-open .compass {
   animation:
     compass-in 1.2s 0.5s both,
-    compass-turn 60s 1.6s linear infinite;
+    compass-turn 50s 1.6s linear infinite;
 }
 
 @keyframes grid-fade {
@@ -162,7 +162,7 @@ body.view-carta.is-open .compass {
 
 @keyframes rhumb-in {
   from { opacity: 0; transform: scale(0.7) rotate(-20deg); }
-  to { opacity: 0.7; transform: scale(1) rotate(0deg); }
+  to { opacity: 0.9; transform: scale(1) rotate(0deg); }
 }
 
 @keyframes rhumb-spin {
@@ -172,7 +172,7 @@ body.view-carta.is-open .compass {
 
 @keyframes compass-in {
   from { opacity: 0; transform: scale(0.4) rotate(-90deg); }
-  to { opacity: 0.45; transform: scale(1) rotate(0deg); }
+  to { opacity: 0.7; transform: scale(1) rotate(0deg); }
 }
 
 @keyframes compass-turn {
@@ -180,7 +180,7 @@ body.view-carta.is-open .compass {
   to { transform: rotate(360deg); }
 }
 
-/* ——— Atlas ——— */
+/* â€”â€”â€” Atlas â€”â€”â€” */
 .atlas {
   position: relative;
   z-index: 1;
@@ -271,21 +271,48 @@ body.atlas-ready .atlas-card {
 }
 
 .atlas-card-frame {
+  --bolt: radial-gradient(circle at 38% 32%, #f3e0a8 0 30%, #c4a35a 48%, #6e5528 72%, #3a2808 100%);
+  position: relative;
   display: block;
   margin: 0 auto 1rem;
-  width: min(160px, 55%);
-  padding: 6px;
-  background: linear-gradient(145deg, var(--brass-bright), var(--brass) 45%, #6e5528);
-  clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+  width: min(168px, 58%);
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #9a7b3c;
+  background-image:
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    linear-gradient(155deg, #e8d090 0%, #c4a35a 35%, #8a6a32 70%, #5a4018 100%);
+  background-size:
+    9px 9px, 9px 9px, 9px 9px, 9px 9px,
+    9px 9px, 9px 9px, 9px 9px, 9px 9px,
+    9px 9px, 9px 9px, 9px 9px, 9px 9px,
+    auto;
+  background-position:
+    4px 4px, 50% 3px, calc(100% - 4px) 4px,
+    calc(100% - 3px) 50%,
+    calc(100% - 4px) calc(100% - 4px), 50% calc(100% - 3px), 4px calc(100% - 4px),
+    3px 50%,
+    4px 28%, 4px 72%,
+    calc(100% - 4px) 28%, calc(100% - 4px) 72%,
+    0 0;
+  background-repeat: no-repeat;
+  box-shadow:
+    0 8px 20px rgba(20, 14, 6, 0.4),
+    inset 0 1px 0 rgba(255, 240, 200, 0.45),
+    inset 0 -2px 3px rgba(40, 28, 10, 0.3);
 }
 
 .atlas-card-frame img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  filter: sepia(0.15) contrast(1.05);
+  height: auto;
+  object-fit: contain;
+  border-radius: 3px;
+  border: 2px solid #5a4018;
+  box-shadow: inset 0 0 0 1px rgba(232, 208, 144, 0.35);
+  filter: sepia(0.1) contrast(1.04);
 }
 
 .atlas-card-meta {
@@ -314,7 +341,7 @@ body.atlas-ready .atlas-card {
   opacity: 0.8;
 }
 
-/* ——— Escenario ——— */
+/* â€”â€”â€” Escenario â€”â€”â€” */
 .stage {
   position: relative;
   z-index: 1;
@@ -356,7 +383,7 @@ body.view-carta.is-open .btn-back {
   outline: none;
 }
 
-/* ——— Papiro / pergamino ——— */
+/* â€”â€”â€” Papiro / pergamino â€”â€”â€” */
 .parchment {
   position: relative;
   width: min(980px, 100%);
@@ -529,7 +556,7 @@ body.view-carta.is-open .corner-br { animation: corner-draw 0.55s 1.25s both; }
   to { opacity: 1; }
 }
 
-/* ——— Contenido en cascada ——— */
+/* â€”â€”â€” Contenido en cascada â€”â€”â€” */
 .carta-header,
 .carta-body,
 .carta-footer {
@@ -589,7 +616,7 @@ body.view-carta.is-open .seal-line {
   color: var(--brass);
 }
 
-/* ——— Cuerpo ——— */
+/* â€”â€”â€” Cuerpo â€”â€”â€” */
 .carta-body {
   display: grid;
   grid-template-columns: minmax(180px, 260px) 1fr;
@@ -603,18 +630,36 @@ body.view-carta.is-open .seal-line {
 }
 
 .retrato-ring {
+  --bolt: radial-gradient(circle at 38% 32%, #f3e0a8 0 28%, #c9a84e 46%, #6e5528 70%, #2e2008 100%);
   position: relative;
   display: inline-block;
-  padding: 8px;
-  background:
-    linear-gradient(145deg, var(--brass-bright), var(--brass) 40%, #6e5528 100%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #9a7b3c;
+  background-image:
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    var(--bolt), var(--bolt), var(--bolt), var(--bolt), var(--bolt),
+    var(--bolt),
+    linear-gradient(155deg, #edd79a 0%, #c9a84e 30%, #9a7b3c 58%, #6e5528 82%, #4a3510 100%);
+  background-size:
+    11px 11px, 11px 11px, 11px 11px, 11px 11px, 11px 11px,
+    11px 11px, 11px 11px, 11px 11px, 11px 11px, 11px 11px,
+    11px 11px, 11px 11px, 11px 11px, 11px 11px, 11px 11px,
+    11px 11px,
+    auto;
+  background-position:
+    5px 5px, 25% 4px, 50% 3px, 75% 4px, calc(100% - 5px) 5px,
+    calc(100% - 4px) 28%, calc(100% - 3px) 50%, calc(100% - 4px) 72%,
+    calc(100% - 5px) calc(100% - 5px), 75% calc(100% - 4px), 50% calc(100% - 3px), 25% calc(100% - 4px), 5px calc(100% - 5px),
+    4px 72%, 3px 50%, 4px 28%,
+    0 0;
+  background-repeat: no-repeat;
   box-shadow:
-    0 10px 24px rgba(40, 28, 12, 0.35),
-    inset 0 0 0 2px rgba(255, 236, 190, 0.35);
-  clip-path: polygon(
-    4% 0%, 96% 0%, 100% 4%, 100% 96%, 96% 100%, 4% 100%, 0% 96%, 0% 4%
-  );
-  transform: scale(0.88) rotate(-2deg);
+    0 12px 28px rgba(30, 20, 8, 0.42),
+    inset 0 1px 0 rgba(255, 245, 210, 0.5),
+    inset 0 -2px 4px rgba(40, 28, 10, 0.35);
+  transform: scale(0.96);
 }
 
 body.view-carta.is-open .retrato .retrato-ring {
@@ -623,38 +668,37 @@ body.view-carta.is-open .retrato .retrato-ring {
 
 @keyframes portrait-settle {
   0% {
-    transform: scale(0.75) rotate(-6deg);
-    filter: brightness(0.7) sepia(0.4);
+    transform: scale(0.85);
+    filter: brightness(0.75);
   }
   60% {
-    transform: scale(1.04) rotate(1deg);
-    filter: brightness(1.08) sepia(0.1);
+    transform: scale(1.02);
+    filter: brightness(1.05);
   }
   100% {
-    transform: scale(1) rotate(0deg);
-    filter: brightness(1) sepia(0);
+    transform: scale(1);
+    filter: brightness(1);
   }
 }
 
+.retrato-ring::before,
 .retrato-ring::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border: 1px solid rgba(20, 36, 56, 0.35);
-  pointer-events: none;
-  clip-path: inherit;
+  content: none;
 }
 
 .retrato img {
   display: block;
   width: 100%;
-  max-width: 240px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  filter: sepia(0.18) contrast(1.05);
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 3px solid #5a4018;
+  box-shadow:
+    0 0 0 1px rgba(232, 208, 144, 0.4),
+    inset 0 0 12px rgba(0, 0, 0, 0.15);
+  filter: sepia(0.08) contrast(1.04);
 }
-
 .rango {
   margin-top: 0.85rem;
   font-family: var(--font-display);
@@ -723,13 +767,29 @@ body.view-carta.is-open .retrato .retrato-ring {
   color: var(--ink);
 }
 
-.condecoraciones ul {
+.bloque ul {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1.45rem;
+  list-style: none;
+}
+
+.bloque li {
+  position: relative;
+  margin-bottom: 0.38rem;
+  padding-left: 0.1rem;
+}
+
+.bloque li::before {
+  content: "⚓";
+  position: absolute;
+  left: -1.4rem;
+  top: 0.05em;
+  font-size: 0.78em;
+  line-height: 1.4;
+  color: var(--brass);
 }
 
 .condecoraciones li {
-  margin-bottom: 0.28rem;
   opacity: 0;
 }
 
@@ -755,10 +815,6 @@ body.view-carta.is-open .condecoraciones li:nth-child(15) { animation-delay: 3.4
 body.view-carta.is-open .condecoraciones li:nth-child(16) { animation-delay: 3.55s; }
 body.view-carta.is-open .condecoraciones li:nth-child(17) { animation-delay: 3.65s; }
 
-.condecoraciones li::marker {
-  color: var(--brass);
-}
-
 @keyframes fade-rise {
   from {
     opacity: 0;
@@ -770,7 +826,7 @@ body.view-carta.is-open .condecoraciones li:nth-child(17) { animation-delay: 3.6
   }
 }
 
-/* ——— Pie ——— */
+/* â€”â€”â€” Pie â€”â€”â€” */
 .carta-footer {
   display: flex;
   align-items: center;
@@ -803,7 +859,7 @@ body.view-carta.is-open .anchor-mark:last-child {
   50% { transform: translateY(-3px); }
 }
 
-/* ——— Responsive ——— */
+/* â€”â€”â€” Responsive â€”â€”â€” */
 @media (max-width: 720px) {
   .carta-body {
     grid-template-columns: 1fr;
@@ -839,7 +895,7 @@ body.view-carta.is-open .anchor-mark:last-child {
 
   @keyframes compass-in-soft {
     from { opacity: 0; transform: scale(0.4) rotate(-90deg); }
-    to { opacity: 0.22; transform: scale(1) rotate(0deg); }
+    to { opacity: 0.45; transform: scale(1) rotate(0deg); }
   }
 }
 
@@ -880,3 +936,4 @@ body.view-carta.is-open .anchor-mark:last-child {
     width: min(220px, 50%);
   }
 }
+
