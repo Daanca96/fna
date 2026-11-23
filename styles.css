@@ -197,6 +197,10 @@ body.view-carta.is-open .compass {
   transform: translateY(18px);
 }
 
+.atlas-header .carta-label {
+  color: #e8d090;
+}
+
 body.atlas-ready .atlas-header {
   animation: fade-rise 0.9s 0.15s both;
 }
@@ -302,6 +306,23 @@ body.atlas-ready .atlas-card {
     0 8px 20px rgba(20, 14, 6, 0.4),
     inset 0 1px 0 rgba(255, 240, 200, 0.45),
     inset 0 -2px 3px rgba(40, 28, 10, 0.3);
+  transform-origin: center bottom;
+}
+
+body.atlas-ready .atlas-card-frame {
+  animation: photo-float 3.8s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 0.28s);
+}
+
+@keyframes photo-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.03);
+    filter: brightness(1.08);
+  }
 }
 
 .atlas-card-frame img {
@@ -917,6 +938,7 @@ body.view-carta.is-open .anchor-mark:last-child {
   .anchor-mark,
   .atlas-header,
   .atlas-card,
+  .atlas-card-frame,
   .btn-back {
     animation: none !important;
     transition: none !important;
