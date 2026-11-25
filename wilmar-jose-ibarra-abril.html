@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMC Wilmar José Ibarra Abril — Carta de Navegación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="view-carta is-loading">
+  <div class="veil" aria-hidden="true">
+    <p class="veil-text">Abriendo carta de navegación…</p>
+  </div>
+
+  <div class="ocean">
+    <div class="chart-grid" aria-hidden="true"></div>
+    <div class="rhumb-lines" aria-hidden="true"></div>
+    <svg class="compass" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35" />
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".25" />
+      <g class="compass-needles">
+        <polygon points="100,18 108,100 100,92 92,100" fill="currentColor" opacity=".55" />
+        <polygon points="100,182 108,100 100,108 92,100" fill="currentColor" opacity=".3" />
+        <polygon points="18,100 100,92 92,100 100,108" fill="currentColor" opacity=".35" />
+        <polygon points="182,100 100,92 100,108 108,100" fill="currentColor" opacity=".35" />
+      </g>
+      <text x="100" y="14" text-anchor="middle" font-size="11" fill="currentColor" opacity=".5">N</text>
+    </svg>
+  </div>
+
+  <main class="stage">
+    <a class="btn-back" href="index.html">← Tablero</a>
+
+    <article class="parchment" aria-labelledby="nombre">
+      <div class="scroll-rod scroll-rod-top" aria-hidden="true"></div>
+      <div class="scroll-rod scroll-rod-bottom" aria-hidden="true"></div>
+      <div class="parchment-edge" aria-hidden="true"></div>
+      <div class="corner corner-tl" aria-hidden="true"></div>
+      <div class="corner corner-tr" aria-hidden="true"></div>
+      <div class="corner corner-bl" aria-hidden="true"></div>
+      <div class="corner corner-br" aria-hidden="true"></div>
+
+      <header class="carta-header reveal" style="--d: 0.55s">
+        <p class="carta-label">Armada Nacional de Colombia</p>
+        <div class="seal-line" aria-hidden="true"></div>
+        <p class="periodo">Septiembre 2024 — Marzo 2026</p>
+      </header>
+
+      <div class="carta-body">
+        <figure class="retrato reveal" style="--d: 0.85s">
+          <div class="retrato-ring">
+            <img
+              src="img/wilmar-jose-ibarra-abril.png"
+              alt="Retrato oficial del SMC Wilmar José Ibarra Abril con uniforme de gala de Infantería de Marina"
+              width="320"
+              height="400"
+            />
+          </div>
+          <figcaption class="rango">Sargento Mayor de Comando · Asesor FNA</figcaption>
+        </figure>
+
+        <div class="info">
+          <h1 id="nombre" class="reveal-name" style="--d: 1.05s">Wilmar José Ibarra Abril</h1>
+          <p class="subtitulo reveal" style="--d: 1.2s">SMC · Fuerza Naval de la Amazonía</p>
+
+          <section class="bloque reveal" style="--d: 1.35s">
+            <h2>Trayectoria</h2>
+            <p>
+              Nacido el 17 de abril de 1976 en Cúcuta, Norte de Santander, y criado en el municipio
+              de Salazar de las Palmas, Norte de Santander. Se incorporó como alumno de la Escuela
+              de Guerra Anfibia (EGAN) el 3 de febrero de 1997 como integrante del curso N.° 69.
+              Se graduó como Cabo Segundo de Infantería de Marina el 1 de diciembre de 1997.
+              Se encuentra casado desde el año 2003 con la señora Oriana Birleth Quiceno Morales;
+              hijos: Camilo Antonio Ibarra Quiceno y Lyann David Ibarra Quiceno.
+            </p>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.5s">
+            <h2>Formación académica</h2>
+            <ul>
+              <li>Técnico Profesional en Procedimientos Judiciales</li>
+              <li>Tecnólogo en Entrenamiento y Gestión Militar</li>
+            </ul>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.65s">
+            <h2>Unidades y cargos</h2>
+            <ul>
+              <li>Batallón de Instrucción I.M. No. 40 Tumaco — Instructor</li>
+              <li>Elemento 14 Combate Fluvial (Tres Esquinas, Caquetá) — Comandante de Bote</li>
+              <li>Elemento de Combate Fluvial No. 60.04 — Comandante de Bote</li>
+              <li>Grupo de Tarea Fluvial Conjunta (Omega) — Remplazante de pelotón</li>
+              <li>Batallón de Instrucción de I.M. No. 1 — Sargento de pelotón</li>
+              <li>Escuela de Formación de Infantería de Marina — Profesor Militar 4</li>
+              <li>Comando de Infantería de Marina — Analista de operaciones</li>
+              <li>Grupo Móvil de Entrenamiento Bogotá — Remplazante de Equipo</li>
+              <li>Brigada de Infantería de Marina No. 1 — Coordinador operacional</li>
+              <li>Batallón Fluvial de Infantería de Marina No. 41 — SP Compañía</li>
+              <li>Batallón Fluvial de Infantería de Marina No. 41 — SM Batallón</li>
+              <li>Brigada de Infantería de Marina No. 1 — SM Brigada</li>
+              <li>Brigada de Infantería de Marina No. 1 — SM Planeación</li>
+              <li>Brigada de Infantería de Marina No. 1 — SM Personal</li>
+              <li>Brigada de Infantería de Marina No. 1 — SMC Brigada</li>
+              <li>Fuerza Naval de la Amazonía — Asesor de Comando</li>
+            </ul>
+          </section>
+
+          <section class="bloque reveal" style="--d: 1.85s">
+            <h2>Comisiones en el exterior</h2>
+            <ul>
+              <li>Instructores en entrenamiento conjunto de operaciones fluviales — Guatemala</li>
+              <li>Instructores del conjunto en operaciones fluviales Colombia–Estados Unidos — Panamá</li>
+              <li>Secretario Naval en la Embajada de Colombia ante el Gobierno de Honduras — Tegucigalpa</li>
+            </ul>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 2s">
+            <h2>Condecoraciones</h2>
+            <ul>
+              <li>Medalla Servicios Distinguidos a la Infantería de Marina</li>
+              <li>Medalla Servicios Distinguidos a la Escuela de Formación de Infantería de Marina</li>
+              <li>Medalla por tiempo de servicio 15, 20 y 25 años</li>
+              <li>Orden del Mérito Naval “Almirante Padilla”</li>
+              <li>Medalla Fe en la Causa Ejército Nacional</li>
+              <li>Medalla Servicios Distinguidos a la Armada Nacional</li>
+              <li>Al Espíritu del Bicentenario Naval de la Armada Nacional</li>
+              <li>Medalla “Fe en la Causa” del Comando General FF.MM.</li>
+            </ul>
+          </section>
+
+          <section class="bloque condecoraciones reveal" style="--d: 2.2s">
+            <h2>Distintivos militares</h2>
+            <ul>
+              <li>Distintivo Escuela de Formación de Infantería de Marina</li>
+              <li>Distintivo Profesor Militar V y IV</li>
+              <li>Citación Presidencial de la Victoria Militar y Policial</li>
+              <li>Programa Integral para Suboficiales de Alta Jerarquía de las Fuerzas Militares</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <footer class="carta-footer reveal" style="--d: 2.35s">
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+        <span>Carta de navegación · Archivo histórico</span>
+        <span class="anchor-mark" aria-hidden="true">⚓</span>
+      </footer>
+    </article>
+  </main>
+
+  <script src="carta.js"></script>
+</body>
+</html>
